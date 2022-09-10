@@ -1,37 +1,43 @@
 public class Main {
     public static void main(String[] args) {
-
         System.out.println("task1");
-        int age = 17;
-        if (age >= 18) {
-            System.out.println("Поздравляем с совершеннолетием");
+        int age = 3;
+        if (age >= 2 && age <= 6) {
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в детский сад");
         }
-        else {
-            System.out.println("Нужно еще немного подождать");
+        else if (age >= 7 && age <= 18) {
+            System.out.println("Если возраст человека равен " + ", то ему нужно ходить в школу");
+        }
+        else if (age >18 && age < 24){
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в университет");
+        }
+        else if (age >=24) {
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить на работу");
         }
 
         System.out.println("task2");
-        int humanAge = 27;
-        if (humanAge >= 7 && humanAge < 18) {
-            System.out.println("Ребенок ходит в школу");
-        } else if (humanAge >= 18 && humanAge < 24) {
-            System.out.println("человек уже закончил школу и может отправляться в университет");
+        int childAge = 18;
+        if (childAge < 5) {
+            System.out.println("тебе " + childAge + ", поэтому ты не можешь кататься на аттракционе");
         }
-        else if (humanAge >= 24) {
-            System.out.println("человек окончил университет и ему пора искать первую работу");
+        if (childAge >= 5 && childAge < 14) {
+            System.out.println("тебе " + childAge + ", поэтому ты можешь кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя");
+        }
+        if (childAge >= 14) {
+            System.out.println("тебе " + childAge + ", поэтому ты можешь кататься без сопровождения взрослого");
         }
 
         System.out.println("task3");
-        int passengers = 6;
-        if (passengers <= 60) {
-            System.out.println("есть сидячее место в вагоне");
+        int one = 1;
+        int two = 2;
+        int free = 28;
+        if (one>two && one>free) {
+            System.out.println("one - бОльшее число");
+        } else if (two>one && two>free) {
+            System.out.println("two - бОльшее число");
         }
-        else if (passengers > 60 && passengers <= 102) {
-            System.out.println("есть стоячее место в вагоне");
-        }
-        else
-        {
-            System.out.println("вагон уже полностью забит");
+        else if (free>one && free>two) {
+            System.out.println("free - бОльшее число");
         }
     }
 }
