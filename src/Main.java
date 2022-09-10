@@ -22,7 +22,7 @@ public class Main {
         }
 
         System.out.println("task3");
-        int passengers = 5;
+        int passengers = 6;
         if (passengers <= 60) {
             System.out.println("есть сидячее место в вагоне");
         }
